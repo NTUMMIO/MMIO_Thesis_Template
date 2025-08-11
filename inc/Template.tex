@@ -1,0 +1,110 @@
+% =============================================================================
+% DEFINE CHAPTERS, SECTIONS, SUBSECTIONS
+% =============================================================================
+% Chapter
+\chapter{Chapter Title}
+\label{ch:template_chapter}
+TODO
+
+% Section
+\section{Section Title}
+\label{sec:template_section}
+TODO
+
+% Subsection
+\subsection{Subsection Title}
+\label{sec:template_subsection}
+TODO
+
+
+% =============================================================================
+% CITATIONS
+% =============================================================================
+Previous study~\cite{Cherry_2006_PET}.
+
+
+% =============================================================================
+% REFER TO FIGURES, TABLES, SECTIONS...
+% =============================================================================
+% Chapter/Section Reference
+See~\chref{template_chapter}.
+See~\secref{template_section}.
+
+% Figure Reference
+As shown in~\figref{template_fig}.
+
+% Figure Reference with Footnotes
+As shown in~\figref{template_fig}.\footnote{Complete the footnotes.}
+
+% Table Reference
+\tabref{template_table} demonstrates the detailed information.
+
+% Algorithm Reference
+As shown in~\algref{template_algorithm}.
+
+% Equation Reference
+As shown in~\eqnref{template_equation}.
+
+% For other references, please see the "References" part in marco.tex.
+
+
+% =============================================================================
+% DEFINE FIGURES, TABLES, ALGORITHMS, EQUATIONS
+% =============================================================================
+% Figure
+\begin{figure}
+    \begin{center}
+    \includegraphics[width=0.8\linewidth]{figure_path}
+    \end{center}
+    \caption{
+        Caption.
+    }
+    \label{fig:template_fig}
+\end{figure}
+
+
+% Table
+\begin{table}[p]
+    \vergap{0.8}
+    \horgap{4.5pt}
+    \caption{
+        Caption.
+    }
+    \vspace{5pt}
+    \label{tab:template_table}
+    \centering
+    \footnotesize 
+    \begin{tabular}{lcc}
+        \toprule
+        Desc    & Column1   & Column2   \\
+        \midrule
+        Row1    & 11        & 12        \\
+        Row2    & 21        & 22        \\
+        \bottomrule
+    \end{tabular}
+    % Add Note at the bottom of the table. (OPTIONAL)
+    \vspace{5pt}
+    \parbox{0.85\linewidth}{\footnotesize \textit{Note: }}
+\end{table}
+
+
+% Algorithm
+\begin{algorithm}[H]
+    \caption{Percentile-scaled Normalization}
+    \begin{algorithmic}[1]
+        \STATE \textbf{Input:} array $A$
+        \STATE $m \gets \min(A)$
+        \STATE \textbf{Output:} $m$
+    \end{algorithmic}
+    \label{alg:template_algorithm}
+    % Add Note at the bottom of the algrithm. (OPTIONAL)
+    \vspace{0.5em}
+    \small \textit{Note: }
+\end{algorithm}
+
+
+% Equation
+\begin{equation}
+    \mathrm{PSNR}(X, Y) = 10 \cdot \log_{10} \left( \frac{MAX^2}{\frac{1}{H \times W \times D} \sum_{i,j,k} (X_{ijk} - Y_{ijk})^2} \right)
+    \label{eq:template_equation}
+\end{equation}

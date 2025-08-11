@@ -1,0 +1,105 @@
+\documentclass[a4paper, 12pt, twoside, openright]{mythesis}
+
+\include{macros}
+\renewcommand{\baselinestretch}{1.5}
+
+%\hypersetup{
+%    colorlinks=true,       % false: boxed links; true: colored links
+%    linkcolor=blue,          % color of internal links
+%    citecolor=blue,        % color of links to bibliography
+%    filecolor=blue,      % color of file links
+%    urlcolor=blue           % color of external links
+%}
+
+%------------------------------------
+% Thesis boundary Setting
+%-------------------------------------
+
+\textwidth      = 137.0mm
+\textheight     = 224.0mm
+\topmargin      =  -3.0mm
+\headheight     =   7.0mm
+\headsep        =  10.0mm
+\footskip       =   8.0mm
+\oddsidemargin  =  10.6mm
+\evensidemargin =  10.6mm
+\hoffset = -0.2cm
+%\overfullrule=5pt%%
+
+\pagenumbering{roman}% \thispagestyle{myheadings}
+\setcounter{page}{1}
+%\thispagestyle{empty}
+
+\begin{document}
+
+% =============================================================================
+% (Optional) The cover page needs to be replaced with /doc/cover.pdf.
+% =============================================================================
+\title{\textbf{TITLE}}
+
+
+\author{ \\  \\ \\
+{\it AUTHOR NAME}\\
+{\it Advisor: Kevin T. Chen} \\ \\ \\ \\  \\ \\
+{\it Department of Biomedical Engineering}\\
+{\it National Taiwan University} \\
+{\it Taipei, Taiwan}\\ }
+
+{\date{August 2025}}
+
+\maketitle
+
+
+% =============================================================================
+% 
+% =============================================================================
+\frontmatter
+\cleardoublepage
+
+% Acknowledgements on page i
+\setcounter{page}{1}
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\cleardoublepage
+
+% Chinese Abstract on page iii
+\setcounter{page}{3}
+\chapter*{Chinese Abstract}
+\addcontentsline{toc}{chapter}{Chinese Abstract}
+
+% Contents from original template
+\input{inc/0_abstract/abstract.tex}
+\tableofcontents
+\listoffigures
+\listoftables
+\input{inc/0_abbreviations/list_of_abbreviations.tex}
+
+%------------------------------------
+% Thesis Body -- begin
+%------------------------------------
+
+\mainmatter
+
+\input{inc/1_introduction/introduction.tex}
+\input{inc/2_related_work/related_work.tex}
+\input{inc/3_materials_and_methods/materials_and_methods.tex}
+\input{inc/4_results/results.tex}
+\input{inc/5_discussion/discussion.tex}
+\input{inc/6_conclusion/conclusion.tex}
+
+
+%------------------------------------
+% Thesis Body -- end
+%------------------------------------
+
+% Reference
+\bibliographystyle{IEEEtran}
+\bibliography{thesis}
+
+% Appendix
+\appendix
+\cleardoublepage
+\input{inc/7_appendix/appendix.tex}
+
+
+\end{document}
