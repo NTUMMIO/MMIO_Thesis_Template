@@ -600,6 +600,7 @@
     \chapter*{\contentsname
         \@mkboth{%
            \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+    \addcontentsline{toc}{chapter}{Contents}
     \@starttoc{toc}%
     \if@restonecol\twocolumn\fi
     }

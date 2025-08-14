@@ -2,7 +2,7 @@
 
 > **適用對象**：MMIO 實驗室碩博士論文撰寫  
 > **來源**：本模板參考並修訂自 [mediaic/NTU_MS_Thesis](https://github.com/mediaic/NTU_MS_Thesis.git)  
-> **規範依據**：以台大論文提交系統「學位論文上傳手冊.pdf / Thesis_Guide.pdf」之最新版本為準  
+> **規範依據**：此模板以台大論文提交系統「學位論文上傳手冊.pdf / Thesis_Guide.pdf」之2025年版本為準  
 > **重要限制**：**本 LaTeX 模板目前不支援中文輸入**（中文頁面請於輸出 PDF 後依照「編輯頁面」處理）
 
 ---
@@ -59,7 +59,7 @@
    ├─ Chinese Abstract
    ├─ Cover
    ├─ Cover_with_side
-   ├─ National_Taiwan_University_logo
+   ├─ NTU_watermark
    └─ THESISSAMPLE
 ```
 
@@ -135,7 +135,7 @@
 4. **替換頁碼 i–ii（羅馬數字）為致謝**：以 `doc/Acknowledgement` 取代。  
 5. **替換頁碼 iii–iv（羅馬數字）為中文摘要**：以 `doc/Chinese Abstract` 取代。  
 6. **校徽與 DOI 浮水印**：  
-   - **校徽**：**工具 ▸ 編輯 PDF ▸ 浮水印 ▸ 新增**，選擇 `doc/National_Taiwan_University_logo`（圖檔）並依手冊規定位置/透明度/套用頁面範圍設定。  
+   - **校徽**：**工具 ▸ 編輯 PDF ▸ 浮水印 ▸ 新增**，選擇 `doc/NTU_watermark`（圖檔）並依手冊規定位置/透明度/套用頁面範圍設定。  
    - **DOI 碼**：同上以 **浮水印** 新增（可用文字或圖檔），內容與位置請依手冊規範。  
 7. 依「學位論文上傳手冊」設定保全。  
 8. 依「學位論文上傳手冊」逐項檢查。  
